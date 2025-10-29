@@ -5,7 +5,7 @@ public class UserService {
     
     public String getUserById(int id) {
         // Bug: NullPointerException - no null check
-        if (users != null) return users[id].toUpperCase(); else return null;
+        if (users != null && id >= 0 && id < users.length) return users[id].toUpperCase(); else return null;
 ```
 return users[id].toString();
 ```
