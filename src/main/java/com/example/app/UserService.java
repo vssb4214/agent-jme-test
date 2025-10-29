@@ -5,7 +5,11 @@ public class UserService {
     
     public String getUserById(int id) {
         // Bug: NullPointerException - no null check
-        return users[id].toUpperCase();
+Here is the fixed line of code for the `NullPointerException`:
+```
+return users[id].toString();
+```
+By calling `toString()` on the `users` array, we avoid the possibility of a `NullPointerException` when `users[id]` is null.
     }
     
     public void addUser(String name) {
