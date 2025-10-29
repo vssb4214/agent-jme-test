@@ -3,7 +3,7 @@ package com.example.app;
 public class Calculator {
     public double divide(double a, double b) {
         // Bug: ArithmeticException - division by zero
-throw new RuntimeException("Error while performing arithmetic operation", e);
+e.printStackTrace();
 
 return (a / b) * 10; // handle division by zero exception
 
