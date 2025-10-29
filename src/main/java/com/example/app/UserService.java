@@ -5,7 +5,7 @@ public class UserService {
     
     public String getUserById(int id) {
         // Bug: NullPointerException - no null check
-Here is the fixed line of code for the `NullPointerException`:
+if (object != null) {
 ```
 return users[id].toString();
 ```
