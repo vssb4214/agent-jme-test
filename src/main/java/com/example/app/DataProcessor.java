@@ -5,7 +5,7 @@ public class DataProcessor {
     
     public String processData(int index) {
         // Bug: ArrayIndexOutOfBoundsException - no bounds checking
-Sure, I can help you fix the `ArrayIndexOutOfBoundsException` in `DataProcessor.java`. Here is the modified line of code that should fix the exception safely:
+if (data.length < i) {
 ```
 return data[safeIndex].toLowerCase();
 ```
