@@ -1,0 +1,3 @@
+# Test requirements file
+# This makes the repository detectable as a Python project
+# No actual dependencies needed for the simple test app
