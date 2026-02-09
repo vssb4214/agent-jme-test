@@ -11,6 +11,7 @@ from datetime import datetime
 
 # Pushed via API test
 def main():
+    print("Hello from Chat trial")
     print("=" * 60)
     print("🚀 Application Launched Successfully!")
     print("=" * 60)
