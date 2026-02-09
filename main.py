@@ -9,6 +9,8 @@ import time
 import sys
 from datetime import datetime
 
+RUN_DURATION_SECONDS = 300
+
 # Pushed via API test
 # Test
 def main():
@@ -23,12 +25,12 @@ def main():
     print("\n✅ This application was automatically launched by the create-project API!")
     print("📝 Application is running and ready to receive requests.")
     print("\n💡 This is a test application for verifying the launch feature.")
-    print("   The application will run for 5 minutes, then exit.")
+    print(f"   The application will run for {RUN_DURATION_SECONDS} seconds, then exit.")
     print("\n" + "=" * 60)
     
     # Keep the application running for testing
     try:
-        for i in range(300):  # Run for 5 minutes (300 seconds)
+        for i in range(RUN_DURATION_SECONDS):  # Run for the specified duration
             time.sleep(1)
             if i % 30 == 0:  # Print status every 30 seconds
                 elapsed = i // 60
