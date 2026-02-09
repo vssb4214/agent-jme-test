@@ -15,6 +15,7 @@ RUN_DURATION_SECONDS = 300
 # Test
 # Internal test passed
 def main():
+    print("Starting test launcher...")
     print("Hello from Chat trial")
     print("=" * 60)
     print("🚀 Application Launched Successfully!")
